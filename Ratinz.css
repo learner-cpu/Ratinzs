@@ -12,6 +12,7 @@ body {
     background-color: #f5f7fa;
     color: #333;
     overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Header */
@@ -21,11 +22,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header .logo h1 {
-    color: #fff;
+    color: #f5f7fa;
     font-size: 2rem;
+    
 }
 
 header nav ul {
@@ -75,17 +78,6 @@ header nav ul li a:hover {
     background: linear-gradient(to bottom, MidnightBlue, rgb(65, 105, 225));
 }
 
-.hero #heroVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Pushes the video behind the content */
-    opacity: 0.5; /* Adjust opacity if needed */
-}
-
 .hero-content {
     position: relative;
     z-index: 1;
@@ -116,7 +108,7 @@ header nav ul li a:hover {
     padding: 100px 0;
     text-align: center;
     color: #fefefe;
-    background: linear-gradient(to bottom, rgb(33, 94, 137), rgb(80, 116, 225));
+    background: linear-gradient(to bottom, rgb(71, 110, 230), rgb(135, 156, 223));
 }
 
 .why-choose-us h2 {
@@ -165,8 +157,8 @@ header nav ul li a:hover {
 .how-it-works {
     padding: 100px 0;
     text-align: center;
-    color: #ebfc08;
-    background: linear-gradient(to bottom, rgb(68, 161, 227), rgb(118, 150, 248));
+    color: #f8f8f8;
+    background: linear-gradient(to bottom,  rgb(135, 156, 223), rgba(0, 0, 0, 0.3));
 }
 
 .how-it-works h2 {
@@ -273,20 +265,6 @@ footer p {
     margin-bottom: 5px;
 }
 
-.social-icons {
-    margin-top: 5px;
-}
-
-.social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #ff7b54;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
